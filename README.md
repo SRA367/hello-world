@@ -1,2 +1,2 @@
-# hello-world
-Introductory Python repo: Hello-World
+x=3 
+print(x)
