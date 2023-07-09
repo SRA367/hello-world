@@ -1,0 +1,13 @@
+class Animal: 
+    def cow(self): 
+        print("Cow is animal.") 
+class Mammal(Animal): 
+    def dog(self): 
+        print("Dog is mammal.") 
+class NoneMammal(Mammal): 
+    def insects(self): 
+        print("Insect is non-mammal") 
+Deer = NoneMammal() 
+Deer.cow()
+Deer.dog()
+Deer.insects() 
