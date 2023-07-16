@@ -1,1 +1,16 @@
+pip install requests
+import requests
 
+URL= "https://www.accuweather.com/en/browse-locations/api/geocode/json"
+location= input("Enter a location:")
+PARAMS= {'place': location}
+
+r = requests.get(url = URL, params = PARAMS)
+data = r.json()
+temp= data['current weather']
+print(temp)
+
+if temp < 15:
+    print("cold")
+else:
+    print("hot")
